@@ -1,0 +1,23 @@
+{
+  "name": "api-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BryantDavis-401-advanced-javascript/api-server.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BryantDavis-401-advanced-javascript/api-server/issues"
+  },
+  "homepage": "https://github.com/BryantDavis-401-advanced-javascript/api-server#readme",
+  "dependencies": {
+    "json-server": "^0.16.2"
+  }
+}
