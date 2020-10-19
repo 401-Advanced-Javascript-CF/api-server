@@ -1,0 +1,19 @@
+{
+  "categories": [
+    {
+      "name": "bryant",
+      "display_name": "bryant_theGod",
+      "description": "the man the myth the legend",
+      "id": 1
+    }
+  ],
+  "products": [
+    {
+      "name": "bryant",
+      "display_name": "bryant_theGod",
+      "description": "the man the myth the legend",
+      "category": "lami",
+      "id": 1
+    }
+  ]
+}
