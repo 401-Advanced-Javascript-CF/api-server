@@ -18,6 +18,11 @@
   },
   "homepage": "https://github.com/BryantDavis-401-advanced-javascript/api-server#readme",
   "dependencies": {
-    "json-server": "^0.16.2"
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jest": "^26.6.0",
+    "json-server": "^0.16.2",
+    "nodemon": "^2.0.6",
+    "supertest": "^5.0.0"
   }
 }
