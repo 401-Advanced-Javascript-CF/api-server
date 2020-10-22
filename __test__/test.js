@@ -14,7 +14,7 @@ describe('Testing my express app', () => {
   it('adds another item on post request to /caegories', () => {
     const category = {name: 'test', display_name: 'test', description: 'testing'}
     return testServer
-    .post('/categories')
+    .post('/api/v1/categories')
     .send(category)
     .then(res => {
       id = res.body._id;
@@ -25,14 +25,14 @@ describe('Testing my express app', () => {
 })
 it('should be able to handle a GET against /categories', () => {
 
-    return testServer.get('/categories')
+    return testServer.get('/api/v1/categories')
       .then(res => {
         expect(res.status).toBe(200);
       });
   });
 it('updates record on put request to /category', () => {
     return testServer
-    .put(`/categories/${id}`)
+    .put(`/api/v1/categories/${id}`)
     .send({name: 'updated', display_name: 'test', description: 'testing'})
     .then(results => {
 
@@ -42,18 +42,18 @@ it('updates record on put request to /category', () => {
 })
 it('deletes record on delete request to /category', () => {
     return testServer
-    .delete(`/categories/${id}`)
+    .delete(`/api/v1/categories/${id}`)
     .then(results => {
         expect(results.body).toEqual(null)
         expect (results.status).toBe(200)
     })
 })
 
-// //products
+// // //products
 
 it('should be able to handle a GET against /products', () => {
 
-    return testServer.get('/products')
+    return testServer.get('/api/v1/products')
       .then(res => {
         expect(res.status).toBe(200);
       });
@@ -61,7 +61,7 @@ it('should be able to handle a GET against /products', () => {
   it('adds another item on post request to /products', () => {
     const category = {name: 'test', display_name: 'test', description: 'testing', category: 'testing'}
     return testServer
-    .post('/products')
+    .post('/api/v1/products')
     .send(category)
     .then(res => {
       id = res.body._id;
@@ -71,7 +71,7 @@ it('should be able to handle a GET against /products', () => {
 })
 it('updates record on put request to /products', () => {
     return testServer
-    .put(`/products/${id}`)
+    .put(`/api/v1/products/${id}`)
     .send({name: "updated", id:1})
     .then(results => {
         expect(results.status).toBe(200)
@@ -80,7 +80,7 @@ it('updates record on put request to /products', () => {
 })
 it('deletes record on delete request to /cproducts', () => {
     return testServer
-    .delete(`/products/${id}`)
+    .delete(`/api/v1/products/${id}`)
     .then(results => {
         expect(results.body).toEqual(null)
         expect (results.status).toBe(200)
