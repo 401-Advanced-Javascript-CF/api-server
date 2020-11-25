@@ -35,8 +35,8 @@
     - DELETE: `http://localhost:3000/categories/:id`    be sure to copy the id from the returned object from the post or get
 
 ## Tests
-- `npm test test.js`
- PASS  __test__/test.js
+- `npm test test.js`  
+ PASS  __test__/test.js  
   Testing my express app
     ✓ adds another item on post request to /caegories (55 ms)
     ✓ should be able to handle a GET against /categories (11 ms)
